@@ -166,7 +166,7 @@ Open terminal (macOS and Linux)
 
 #### conda env create -f qcl.yml 
 
-<img width="2308" height="348" alt="Image" src="https://github.com/user attachments/assets/d5f2c00c-f1f4-4767-89d0-55884e554806" />
+<img width="2308" height="348" alt="Image" src="https://github.com/user-attachments/assets/5e3f241c-1d0c-4015-88f8-3c7f33c4c0bc" />
 
 ## Activate Environment and Run the Streamlit.py Application
 Activate the qcl Environment by using the following command:
