@@ -76,9 +76,13 @@ If QBER is low, they correct errors and compress the key to remove any leaked in
 
 ##### 🖼️ “Quantum circuit representation of BB84: Alice prepares qubits, Eve intercepts (Intercept Resend Attack), Bob measures”
 
+- Intercept-Resend Attack: Eve secretly measures each qubit in a fixed basis (usually Z), then sends a new qubit to Bob — introducing noticeable errors if her basis doesn’t match Alice’s.
+
 <img width="3794" height="1888" alt="Image" src="https://github.com/user-attachments/assets/e4bdb1a3-e293-4782-aa11-000bdc6e7343" />
 
 ##### 🖼️ “Quantum circuit representation of BB84: Alice prepares qubits, Eve intercepts (Probabilistic Skew Attack), Bob measures”
+
+- Probabilistic Skew Attack: Eve randomly chooses her measurement basis with a bias (e.g., 70% Z, 30% X), making her interference harder to detect but still causing subtle errors.
 
 <img width="3791" height="1912" alt="Image" src="https://github.com/user-attachments/assets/de2f908b-c564-449e-916f-563936cc9dd9" />
 
