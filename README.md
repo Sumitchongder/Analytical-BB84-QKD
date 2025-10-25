@@ -105,19 +105,6 @@ If QBER is low, they correct errors and compress the key to remove any leaked in
 
 ---
 
-### 🧪 Protocol Steps
-
-1. Alice generates random bits and bases  
-2. Qubits are prepared in the Z or X basis  
-3. Eve intercepts and measures (optional)  
-4. Bob measures with random bases  
-5. Sifting: matched bases retained  
-6. QBER estimated from revealed subset  
-7. If QBER ≤ threshold → EC/PA → secure key  
-8. If QBER > threshold → protocol aborts
-
----
-
 ## 📈 Results
 
 ### Error Checking: QBER + Decoy Yields
