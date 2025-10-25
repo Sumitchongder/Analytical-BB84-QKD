@@ -116,14 +116,17 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 
    
 ### QBER Heatmap with Threshold Contour 
+
 🖼️ “QBER heatmap showing Secure and Abort zones with cyan threshold contour (Intercept Resend Attack)”
 
 <img width="1619" height="1954" alt="Image" src="https://github.com/user-attachments/assets/e89120b2-c00b-4f89-9216-221b39df889d" />
+
 
 🖼️ “QBER heatmap showing Secure and Abort zones with cyan threshold contour (Probability Skew Attack)”
 
 <img width="1612" height="1960" alt="Image" src="https://github.com/user-attachments/assets/416911b0-b5b4-403e-8d9f-9f92576325e0" />
 
+#### Insights: 
 - QBER increases with intercept probability and channel noise  
 - Cyan contour marks threshold boundary  
 - Secure vs Abort zones clearly annotated  
