@@ -1,2 +1,10 @@
-# AnalytiQ
-An interactive BB84 Quantum Key Distribution system built with Qiskit and Streamlit. Features simulator and analytical turbo modes, strategy-aware QBER heatmaps, eavesdropping detection, and secure/abort zone visualization. Designed for education, research, and real-time quantum security analysis.
+# 🔐 Analytical BB84 Engine  
+
+**Team Name:** AnalytiQ  
+**Hackathon:** Qiskit Fall Fest 2025  
+**Project:** Analytical Acceleration of the BB84 Protocol — An Interactive Framework for Quantum Key Distribution Security Analysis
+
+---
+
+
+
