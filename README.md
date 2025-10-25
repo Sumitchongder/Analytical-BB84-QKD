@@ -45,6 +45,21 @@ Our app includes strategy-aware dashboards, annotated heatmaps, and secure/abort
 
 As quantum computers advance, classical encryption methods like RSA and ECC face potential compromise. BB84 offers a physics-based alternative: any attempt to intercept qubits introduces detectable errors. This project makes BB84 tangible through simulation, visualization, and analysis.
 
+🔐 BB84 Protocol — 6 Key Steps
+- Alice generates random bits and bases
+She creates a sequence of 0s and 1s, and randomly chooses a basis (Z or X) to encode each bit as a quantum state.
+- Alice sends qubits to Bob
+Each bit is encoded as a qubit — either |0⟩, |1⟩, |+⟩, or |−⟩ — and transmitted over a quantum channel.
+- Bob measures each qubit in a random basis
+Bob doesn’t know Alice’s basis, so he randomly picks Z or X for each qubit and records the result.
+- Alice and Bob share their basis choices
+Over a public classical channel, they reveal which basis they used — but not the actual bit values.
+- Sifting and QBER estimation
+They keep only the bits where their bases matched (sifted key), then compare a small sample to estimate the Quantum Bit Error Rate (QBER).
+- Error Correction and Privacy Amplification
+If QBER is low, they correct errors and compress the key to remove any leaked information — resulting in a secure shared key.
+
+
 ---
 
 ### 2. BB84 Circuit Diagram  
