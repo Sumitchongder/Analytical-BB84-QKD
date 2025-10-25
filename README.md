@@ -138,7 +138,7 @@ This app is designed to teach QKD interactively:
 ---
 
 ## 📦 Installation and Execution 
-
+images/qiskit logo.png
 ## Install miniconda
 ##### Windows Command Prompt
 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o .\miniconda.exe \
