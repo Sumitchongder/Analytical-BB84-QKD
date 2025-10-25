@@ -142,8 +142,6 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 - **Turbo Mode:** Analytical backend with vectorized probability model  
 - **Strategy-Aware Dashboards:** Compare Eve strategies side-by-side  
 - **Secure/Abort Zone Visualization:** Cyan contours + region labels  
-- **Caching & Reproducibility:** Instant demo experience for judges  
-- **Educational Design:** Clear labels, colour scales, and annotations
 
   
 ### 1. Error Correction + Privacy Amplification (Using Vectorized QKD Simulation)  
@@ -155,7 +153,6 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 - 🔐 Privacy Amplification (PA): We reduce the final key length based on estimated information leakage.
 - ⚡ Vectorized simulation: This approach avoids slow bit-level operations and enables fast, scalable analysis across many parameter settings.
 - 📊 Real-time feedback: Users instantly see whether EC/PA succeeds and how much usable key material remains.
-- 🎓 Educational clarity: Makes the final stages of BB84 transparent and easy to understand, reinforcing the role of QBER in quantum security.
 
 
 ### 2. Eve Strategy Comparison  
