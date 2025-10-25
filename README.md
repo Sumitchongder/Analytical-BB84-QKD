@@ -12,7 +12,7 @@
 This project presents a complete, interactive implementation of the BB84 Quantum Key Distribution (QKD) protocol using **Qiskit** and **Streamlit**. It demonstrates how two parties (Alice and Bob) can securely generate a shared key while detecting any eavesdropping attempts by Eve. The system features a dual-backend architecture:
 
 - **Simulator Mode** using Qiskit Aer for correctness validation  
-- **Analytical Turbo Mode** for scalable, real-time visualizations of Quantum Bit Error Rate (QBER)
+- **Analytical Turbo Mode** for scalable, real-time visualizations of Quantum Bit Error Rate (QBER). Instead of simulating for each qubit, gates and measurements, Analytical Mode uses mathematical formulas to compute expected outcomes across thousands of qubits instantly.
 
 Our app includes strategy-aware dashboards, annotated heatmaps, and secure/abort zone visualizations — making quantum security fast, clear, and interactive.
 
