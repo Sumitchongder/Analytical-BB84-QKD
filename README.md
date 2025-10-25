@@ -1,4 +1,4 @@
-# 🔐 Analytical BB84 Engine  
+# 🔐 Analytical BB84 QKD Engine  
 
 ### **Team Name:** AnalytiQ  
 ### **Team Members:** Sumit Tapas Chongder [M25IQT013]
