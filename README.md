@@ -94,7 +94,7 @@ If QBER is low, they correct errors and compress the key to remove any leaked in
 
 ##### 🖼️ “BB84 protocol workflow: from qubit preparation to key distillation”
 
-<img width="1028" height="3118" alt="Image" src="https://github.com/user-attachments/assets/1e43f16c-7a2b-403a-8251-f507be8ab6f4" />
+<img width="1216" height="2408" alt="Image" src="https://github.com/user-attachments/assets/f5ec8086-d51c-429e-b671-406830d2cffc" />
 
 ### 🔧 Technologies Used
 - Python 3.10+  
