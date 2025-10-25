@@ -25,7 +25,7 @@ Our app includes strategy-aware dashboards, annotated heatmaps, and secure/abort
 - 🧠 Eavesdropper simulation: Intercept-Resend and Probabilistic Skew strategies  
 - 📊 Security phase diagrams: QBER heatmaps with cyan threshold contours  
 - 🔍 Decoy state analysis: Signal > Decoy > Vacuum yield ordering  
-- 🧪 Noise modeling: Depolarizing channel with adjustable parameters  
+- 🧪 Noise modelling: Depolarizing channel with adjustable parameters  
 - 🧰 Modular codebase with caching and reproducibility  
 - 🎓 Educational clarity with annotated visuals and interactive UI
 
@@ -48,15 +48,22 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 ---
 
 ### 2. BB84 Circuit Diagram  
-🖼️ *Caption:* “Quantum circuit representation of BB84: Alice prepares qubits, Eve intercepts, Bob measures”
+🖼️ “Quantum circuit representation of BB84: Alice prepares qubits, Eve does not intercept, Bob measures”
+<img width="2241" height="1504" alt="Image" src="https://github.com/user-attachments/assets/e385d86e-a727-4750-be16-8b88eadb6cad" />
 
+🖼️ “Quantum circuit representation of BB84: Alice prepares qubits, Eve intercepts (Intercept Resend Attack), Bob measures”
+<img width="3794" height="1888" alt="Image" src="https://github.com/user-attachments/assets/e4bdb1a3-e293-4782-aa11-000bdc6e7343" />
 
+🖼️ “Quantum circuit representation of BB84: Alice prepares qubits, Eve intercepts (Probabilistic Skew Attack), Bob measures”
+<img width="3791" height="1912" alt="Image" src="https://github.com/user-attachments/assets/de2f908b-c564-449e-916f-563936cc9dd9" />
 ---
 
 ## 🛠️ Implementation
 
 ### 3. Workflow Flowchart
-🖼️ *Caption:* “BB84 protocol workflow: from qubit preparation to key distillation”
+🖼️ “BB84 protocol workflow: from qubit preparation to key distillation”
+
+<img width="1028" height="3118" alt="Image" src="https://github.com/user-attachments/assets/1e43f16c-7a2b-403a-8251-f507be8ab6f4" />
 
 ### 🔧 Technologies Used
 - Python 3.10+  
@@ -69,7 +76,7 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 
 ### 🧪 Protocol Steps
 1. Alice generates random bits and bases  
-2. Qubits are prepared in Z or X basis  
+2. Qubits are prepared in the Z or X basis  
 3. Eve intercepts and measures (optional)  
 4. Bob measures with random bases  
 5. Sifting: matched bases retained  
@@ -85,43 +92,47 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 - We perform error checking by estimating QBER from sifted bits and validating decoy state yields to ensure channel integrity and detect eavesdropping. 
 - The Expected Order should be: Signal > Decoy > Vacuum. Deviations can indicate eavesdropping or channel anomalies. And, the QBER value should be less than the Abort threshold (QBER) value set otherwise, QBER aborts.
 
-
+<img width="1645" height="1074" alt="Image" src="https://github.com/user-attachments/assets/a6614bfe-338f-4b2e-82d4-dcd4c4983b41" />
 
 ### Comparative Visualizations: 
 1. QBER vs Intercept Probability
-
+<img width="1647" height="1787" alt="Image" src="https://github.com/user-attachments/assets/9b03ee15-6820-4af4-9b65-c871136b2689" />
    
-2. QBER vs Depolarizing Noise
-
+2. QBER vs Depolarising Noise
+<img width="1636" height="1868" alt="Image" src="https://github.com/user-attachments/assets/75eb4097-8d29-4f34-92af-0598e5fc3fcb" />
    
 3. QBER vs Probabilistic Skew
+<img width="1631" height="1791" alt="Image" src="https://github.com/user-attachments/assets/0dd1d238-dac8-480e-8786-316927993655" />
 
    
-
-
 ### QBER Heatmap with Threshold Contour 
-🖼️ *Caption:* “QBER heatmap showing Secure and Abort zones with cyan threshold contour”
+🖼️ “QBER heatmap showing Secure and Abort zones with cyan threshold contour (Intercept Resend Attack)”
 
+<img width="1619" height="1954" alt="Image" src="https://github.com/user-attachments/assets/e89120b2-c00b-4f89-9216-221b39df889d" />
+
+🖼️ “QBER heatmap showing Secure and Abort zones with cyan threshold contour (Probability Skew Attack)”
+
+<img width="1612" height="1960" alt="Image" src="https://github.com/user-attachments/assets/416911b0-b5b4-403e-8d9f-9f92576325e0" />
 
 - QBER increases with intercept probability and channel noise  
 - Cyan contour marks threshold boundary  
 - Secure vs Abort zones clearly annotated  
-- Decoy yields follow expected ordering  
+- Decoy yields follow the expected ordering  
 - Analytical mode enables instant heatmap generation
 
 ---
 
 ## 💡 Innovation
 
-### 5. Error Correction + Privacy Amplification Using Vectorized QKD Simualtion  
-- ✅ Threshold-based modeling: We simulate EC and PA using a configurable QBER threshold (e.g., 11%) to decide whether the protocol proceeds or aborts.
+### 5. Error Correction + Privacy Amplification Using Vectorized QKD Simulation  
+- ✅ Threshold-based modelling: We simulate EC and PA using a configurable QBER threshold (e.g., 11%) to decide whether the protocol proceeds or aborts.
 - 🧮 Error Correction (EC): If QBER is below the threshold, we assume classical error correction succeeds and mismatched bits are reconciled.
 - 🔐 Privacy Amplification (PA): We reduce the final key length based on estimated information leakage.
 - ⚡ Vectorized simulation: This approach avoids slow bit-level operations and enables fast, scalable analysis across many parameter settings.
 - 📊 Real-time feedback: Users instantly see whether EC/PA succeeds and how much usable key material remains.
 - 🎓 Educational clarity: Makes the final stages of BB84 transparent and easy to understand, reinforcing the role of QBER in quantum security.
 
-
+<img width="1167" height="654" alt="Image" src="https://github.com/user-attachments/assets/6af31263-6d4b-4ad0-995a-42643911b0d4" />
 
 ### 6. Eve Strategy Comparison  
 🖼️ *Caption:* “Side-by-side heatmaps for Intercept-Resend and Probabilistic Skew strategies”
@@ -130,7 +141,7 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 - **Strategy-Aware Dashboards:** Compare Eve strategies side-by-side  
 - **Secure/Abort Zone Visualization:** Cyan contours + region labels  
 - **Caching & Reproducibility:** Instant demo experience for judges  
-- **Educational Design:** Clear labels, color scales, and annotations
+- **Educational Design:** Clear labels, colour scales, and annotations
 
 ---
 
@@ -160,12 +171,12 @@ rm ~/miniconda3/miniconda.sh
 ##### Linux
 https://www.anaconda.com/docs/getting-started/miniconda/install#linux-2
 
-In case of any future updates, you can check the following link for qiskit installation.\
+In case of any future updates, you can check the following link for Qiskit installation.\
 https://quantum.cloud.ibm.com/docs/en/guides/install-qiskit
 
 ## Install environment
 Download qcl.yml \
-Open Anaconda prompt (windows) \
+Open Anaconda prompt (Windows) \
 Open terminal (macOS and Linux)
 
 #### Change the directory where the qcl.yml is downloaded
@@ -180,9 +191,9 @@ Activate the qcl Environment by using the following command:
 
 Change the directory where you have downloaded the Python File (streamlit_app.py)
 For Example:
-##### cd Downloads {if the python (.py) file in Downloads Folder}
+##### cd Downloads {if the python (.py) file in the Downloads Folder}
 
-To run the streamlit_app.py execute the following command
+To run the streamlit_app.py, execute the following command
 #### streamlit run streamlit_app.py
 
 <img width="2316" height="557" alt="Image" src="https://github.com/user-attachments/assets/da77ed62-6ec7-4d9e-a81f-308e5bc041e0" />
