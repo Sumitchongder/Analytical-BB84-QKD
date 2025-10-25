@@ -31,7 +31,13 @@ Our app includes strategy-aware dashboards, annotated heatmaps, and secure/abort
 
 ---
 ### 1. Streamlit App Homepage 
-🖼️ *Caption:* “Streamlit dashboard for BB84 protocol execution and visualization”
+🖼️ “Streamlit dashboard for BB84 protocol execution and visualization”
+
+<img width="3839" height="2169" alt="Image" src="https://github.com/user-attachments/assets/8b8c049f-4fb6-499e-9d84-7721a82fcd71" />
+
+<img width="3839" height="2197" alt="Image" src="https://github.com/user-attachments/assets/2d59bfa7-0c35-402c-ad32-0829f07eab6f" />
+
+<img width="3839" height="2145" alt="Image" src="https://github.com/user-attachments/assets/493513f4-bc0a-46ed-867b-75f7af6b9765" />
 
 ---
 
