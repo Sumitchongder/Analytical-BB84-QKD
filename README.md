@@ -73,7 +73,7 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 
 ### 🔧 Technologies Used
 - Python 3.10+  
-- Qiskit  
+- Qiskit 2.0+ 
 - Streamlit  
 - NumPy  
 - Matplotlib / Seaborn
