@@ -1,9 +1,9 @@
 # 🔐 Analytical BB84 Engine  
 
-#### **Team Name:** AnalytiQ  
-#### **Team Member Name:** Sumit Tapas Chongder [M25IQT013]
-#### **Hackathon:** Qiskit Fall Fest 2025  
-#### **Project:** Analytical Acceleration of the BB84 Protocol — An Interactive Framework for Quantum Key Distribution Security Analysis
+### **Team Name:** AnalytiQ  
+### **Team Members:** Sumit Tapas Chongder [M25IQT013]
+### **Hackathon:** Qiskit Fall Fest 2025  
+### **Project:** Analytical Acceleration of the BB84 Protocol — An Interactive Framework for Quantum Key Distribution Security Analysis
 
 ---
 
