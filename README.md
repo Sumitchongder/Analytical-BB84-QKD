@@ -48,20 +48,26 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 ---
 
 ### 2. BB84 Circuit Diagram  
-🖼️ “Quantum circuit representation of BB84: Alice prepares qubits, Eve does not intercept, Bob measures”
+
+##### 🖼️ “Quantum circuit representation of BB84: Alice prepares qubits, Eve does not intercept, Bob measures”
+
 <img width="2241" height="1504" alt="Image" src="https://github.com/user-attachments/assets/e385d86e-a727-4750-be16-8b88eadb6cad" />
 
-🖼️ “Quantum circuit representation of BB84: Alice prepares qubits, Eve intercepts (Intercept Resend Attack), Bob measures”
+##### 🖼️ “Quantum circuit representation of BB84: Alice prepares qubits, Eve intercepts (Intercept Resend Attack), Bob measures”
+
 <img width="3794" height="1888" alt="Image" src="https://github.com/user-attachments/assets/e4bdb1a3-e293-4782-aa11-000bdc6e7343" />
 
-🖼️ “Quantum circuit representation of BB84: Alice prepares qubits, Eve intercepts (Probabilistic Skew Attack), Bob measures”
+##### 🖼️ “Quantum circuit representation of BB84: Alice prepares qubits, Eve intercepts (Probabilistic Skew Attack), Bob measures”
+
 <img width="3791" height="1912" alt="Image" src="https://github.com/user-attachments/assets/de2f908b-c564-449e-916f-563936cc9dd9" />
+
 ---
 
 ## 🛠️ Implementation
 
 ### 3. Workflow Flowchart
-🖼️ “BB84 protocol workflow: from qubit preparation to key distillation”
+
+##### 🖼️ “BB84 protocol workflow: from qubit preparation to key distillation”
 
 <img width="1028" height="3118" alt="Image" src="https://github.com/user-attachments/assets/1e43f16c-7a2b-403a-8251-f507be8ab6f4" />
 
@@ -75,6 +81,7 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 ---
 
 ### 🧪 Protocol Steps
+
 1. Alice generates random bits and bases  
 2. Qubits are prepared in the Z or X basis  
 3. Eve intercepts and measures (optional)  
@@ -89,19 +96,22 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 ## 📈 Results
 
 ### Error Checking: QBER + Decoy Yields
+
 - We perform error checking by estimating QBER from sifted bits and validating decoy state yields to ensure channel integrity and detect eavesdropping. 
-- The Expected Order should be: Signal > Decoy > Vacuum. Deviations can indicate eavesdropping or channel anomalies. And, the QBER value should be less than the Abort threshold (QBER) value set otherwise, QBER aborts.
+- The Expected Order should be: Signal > Decoy > Vacuum. Deviations can indicate eavesdropping or channel anomalies. Additionally, the QBER value should be less than the Abort threshold (QBER) value; otherwise, QBER aborts.
 
 <img width="1645" height="1074" alt="Image" src="https://github.com/user-attachments/assets/a6614bfe-338f-4b2e-82d4-dcd4c4983b41" />
 
+
 ### Comparative Visualizations: 
-1. QBER vs Intercept Probability
+
+#### 1. QBER vs Intercept Probability
 <img width="1647" height="1787" alt="Image" src="https://github.com/user-attachments/assets/9b03ee15-6820-4af4-9b65-c871136b2689" />
    
-2. QBER vs Depolarising Noise
+#### 2. QBER vs Depolarising Noise
 <img width="1636" height="1868" alt="Image" src="https://github.com/user-attachments/assets/75eb4097-8d29-4f34-92af-0598e5fc3fcb" />
    
-3. QBER vs Probabilistic Skew
+#### 3. QBER vs Probabilistic Skew
 <img width="1631" height="1791" alt="Image" src="https://github.com/user-attachments/assets/0dd1d238-dac8-480e-8786-316927993655" />
 
    
@@ -124,7 +134,10 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 
 ## 💡 Innovation
 
-### 5. Error Correction + Privacy Amplification Using Vectorized QKD Simulation  
+### 5. Error Correction + Privacy Amplification (Using Vectorized QKD Simulation)  
+
+<img width="1167" height="654" alt="Image" src="https://github.com/user-attachments/assets/6af31263-6d4b-4ad0-995a-42643911b0d4" />
+
 - ✅ Threshold-based modelling: We simulate EC and PA using a configurable QBER threshold (e.g., 11%) to decide whether the protocol proceeds or aborts.
 - 🧮 Error Correction (EC): If QBER is below the threshold, we assume classical error correction succeeds and mismatched bits are reconciled.
 - 🔐 Privacy Amplification (PA): We reduce the final key length based on estimated information leakage.
@@ -132,10 +145,12 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 - 📊 Real-time feedback: Users instantly see whether EC/PA succeeds and how much usable key material remains.
 - 🎓 Educational clarity: Makes the final stages of BB84 transparent and easy to understand, reinforcing the role of QBER in quantum security.
 
-<img width="1167" height="654" alt="Image" src="https://github.com/user-attachments/assets/6af31263-6d4b-4ad0-995a-42643911b0d4" />
 
 ### 6. Eve Strategy Comparison  
-🖼️ *Caption:* “Side-by-side heatmaps for Intercept-Resend and Probabilistic Skew strategies”
+
+🖼️ “Side-by-side heatmaps for Intercept-Resend and Probabilistic Skew strategies”
+
+<img width="2876" height="1170" alt="Image" src="https://github.com/user-attachments/assets/b99ba3fe-3a23-489a-acbe-b28567efc55f" />
 
 - **Turbo Mode:** Analytical backend with vectorized probability model  
 - **Strategy-Aware Dashboards:** Compare Eve strategies side-by-side  
