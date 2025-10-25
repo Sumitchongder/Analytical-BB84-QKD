@@ -1,6 +1,7 @@
 # 🔐 Analytical BB84 Engine  
 
 #### **Team Name:** AnalytiQ  
+#### **Team Member Name:** Sumit Tapas Chongder [M25IQT013]
 #### **Hackathon:** Qiskit Fall Fest 2025  
 #### **Project:** Analytical Acceleration of the BB84 Protocol — An Interactive Framework for Quantum Key Distribution Security Analysis
 
@@ -74,7 +75,25 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 
 ## 📈 Results
 
-### 4. QBER Heatmap with Threshold Contour 
+### Error Checking: QBER + Decoy Yields
+- We perform error checking by estimating QBER from sifted bits and validating decoy state yields to ensure channel integrity and detect eavesdropping. 
+- The Expected Order should be: Signal > Decoy > Vacuum. Deviations can indicate eavesdropping or channel anomalies. And, the QBER value should be less than the Abort threshold (QBER) value set otherwise, QBER aborts.
+
+
+
+### Comparative Visualizations: 
+1. QBER vs Intercept Probability
+
+   
+2. QBER vs Depolarizing Noise
+
+   
+3. QBER vs Probabilistic Skew
+
+   
+
+
+### QBER Heatmap with Threshold Contour 
 🖼️ *Caption:* “QBER heatmap showing Secure and Abort zones with cyan threshold contour”
 
 
@@ -91,12 +110,12 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 ### 5. Error Correction + Privacy Amplification Using Vectorized QKD Simualtion  
 - ✅ Threshold-based modeling: We simulate EC and PA using a configurable QBER threshold (e.g., 11%) to decide whether the protocol proceeds or aborts.
 - 🧮 Error Correction (EC): If QBER is below the threshold, we assume classical error correction succeeds and mismatched bits are reconciled.
-- 🔐 Privacy Amplification (PA): We reduce the final key length based on estimated information leakage using the formula:
-\text{Final Key Length} = \text{Sifted Key Length} \times (1 - 2 \cdot \text{QBER})- ⚡ Vectorized simulation: This approach avoids slow bit-level operations and enables fast, scalable analysis across many parameter settings.
+- 🔐 Privacy Amplification (PA): We reduce the final key length based on estimated information leakage.
+- ⚡ Vectorized simulation: This approach avoids slow bit-level operations and enables fast, scalable analysis across many parameter settings.
 - 📊 Real-time feedback: Users instantly see whether EC/PA succeeds and how much usable key material remains.
 - 🎓 Educational clarity: Makes the final stages of BB84 transparent and easy to understand, reinforcing the role of QBER in quantum security.
 
-🖼️ *Caption:* “Side-by-side heatmaps for Intercept-Resend and Probabilistic Skew strategies”
+
 
 ### 6. Eve Strategy Comparison  
 🖼️ *Caption:* “Side-by-side heatmaps for Intercept-Resend and Probabilistic Skew strategies”
