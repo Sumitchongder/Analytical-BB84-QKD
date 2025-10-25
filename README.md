@@ -41,11 +41,15 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 ---
 
 ### 2. BB84 Circuit Diagram  
+🖼️ *Caption:* “Quantum circuit representation of BB84: Alice prepares qubits, Eve intercepts, Bob measures”
 
 
 ---
 
 ## 🛠️ Implementation
+
+### 3. Workflow Flowchart
+🖼️ *Caption:* “BB84 protocol workflow: from qubit preparation to key distillation”
 
 ### 🔧 Technologies Used
 - Python 3.10+  
@@ -70,6 +74,10 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 
 ## 📈 Results
 
+### 4. QBER Heatmap with Threshold Contour 
+🖼️ *Caption:* “QBER heatmap showing Secure and Abort zones with cyan threshold contour”
+
+
 - QBER increases with intercept probability and channel noise  
 - Cyan contour marks threshold boundary  
 - Secure vs Abort zones clearly annotated  
@@ -79,6 +87,19 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 ---
 
 ## 💡 Innovation
+
+### 5. Error Correction + Privacy Amplification Using Vectorized QKD Simualtion  
+- ✅ Threshold-based modeling: We simulate EC and PA using a configurable QBER threshold (e.g., 11%) to decide whether the protocol proceeds or aborts.
+- 🧮 Error Correction (EC): If QBER is below the threshold, we assume classical error correction succeeds and mismatched bits are reconciled.
+- 🔐 Privacy Amplification (PA): We reduce the final key length based on estimated information leakage using the formula:
+\text{Final Key Length} = \text{Sifted Key Length} \times (1 - 2 \cdot \text{QBER})- ⚡ Vectorized simulation: This approach avoids slow bit-level operations and enables fast, scalable analysis across many parameter settings.
+- 📊 Real-time feedback: Users instantly see whether EC/PA succeeds and how much usable key material remains.
+- 🎓 Educational clarity: Makes the final stages of BB84 transparent and easy to understand, reinforcing the role of QBER in quantum security.
+
+🖼️ *Caption:* “Side-by-side heatmaps for Intercept-Resend and Probabilistic Skew strategies”
+
+### 6. Eve Strategy Comparison  
+🖼️ *Caption:* “Side-by-side heatmaps for Intercept-Resend and Probabilistic Skew strategies”
 
 - **Turbo Mode:** Analytical backend with vectorized probability model  
 - **Strategy-Aware Dashboards:** Compare Eve strategies side-by-side  
@@ -99,6 +120,46 @@ This app is designed to teach QKD interactively:
 
 ## 📦 Installation and Execution 
 
+## Install miniconda
+##### Windows Command Prompt
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o .\miniconda.exe \
+start /wait "" .\miniconda.exe /S \
+del .\miniconda.exe
 
+##### macOS
+mkdir -p ~/miniconda3 \
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh \
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3 \
+rm ~/miniconda3/miniconda.sh 
+
+##### Linux
+https://www.anaconda.com/docs/getting-started/miniconda/install#linux-2
+
+In case of any future updates, you can check the following link for qiskit installation.\
+https://quantum.cloud.ibm.com/docs/en/guides/install-qiskit
+
+## Install environment
+Download qcl.yml \
+Open Anaconda prompt (windows) \
+Open terminal (macOS and Linux)
+
+#### Change the directory where the qcl.yml is downloaded
+
+#### conda env create -f qcl.yml 
+
+<img src="Screenshot 2025-10-25 155412.png">
+
+## Activate Environment and Run the Streamlit.py Application
+Activate the qcl Environment by using the following command:
+##### conda activate qcl
+
+Change the directory where you have downloaded the Python File (streamlit_app.py)
+For Example:
+##### cd Downloads {if the python (.py) file in Downloads Folder}
+
+To run the streamlit_app.py execute the following command
+#### streamlit run streamlit_app.py
+
+<img src="Screenshot 2025-10-25 160824.png">
 
 
