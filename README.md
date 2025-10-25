@@ -102,6 +102,7 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 
 <img width="1645" height="1074" alt="Image" src="https://github.com/user-attachments/assets/a6614bfe-338f-4b2e-82d4-dcd4c4983b41" />
 
+--- 
 
 ### Comparative Visualizations: 
 
@@ -114,7 +115,8 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 #### 3. QBER vs Probabilistic Skew
 <img width="1631" height="1791" alt="Image" src="https://github.com/user-attachments/assets/0dd1d238-dac8-480e-8786-316927993655" />
 
-   
+--- 
+
 ### QBER Heatmap with Threshold Contour 
 
 🖼️ “QBER heatmap showing Secure and Abort zones with cyan threshold contour (Intercept Resend Attack)”
@@ -137,7 +139,14 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 
 ## 💡 Innovation
 
-### 5. Error Correction + Privacy Amplification (Using Vectorized QKD Simulation)  
+- **Turbo Mode:** Analytical backend with vectorized probability model  
+- **Strategy-Aware Dashboards:** Compare Eve strategies side-by-side  
+- **Secure/Abort Zone Visualization:** Cyan contours + region labels  
+- **Caching & Reproducibility:** Instant demo experience for judges  
+- **Educational Design:** Clear labels, colour scales, and annotations
+
+  
+### 1. Error Correction + Privacy Amplification (Using Vectorized QKD Simulation)  
 
 <img width="1167" height="654" alt="Image" src="https://github.com/user-attachments/assets/6af31263-6d4b-4ad0-995a-42643911b0d4" />
 
@@ -149,17 +158,11 @@ As quantum computers advance, classical encryption methods like RSA and ECC face
 - 🎓 Educational clarity: Makes the final stages of BB84 transparent and easy to understand, reinforcing the role of QBER in quantum security.
 
 
-### 6. Eve Strategy Comparison  
+### 2. Eve Strategy Comparison  
 
 🖼️ “Side-by-side heatmaps for Intercept-Resend and Probabilistic Skew strategies”
 
 <img width="2876" height="1170" alt="Image" src="https://github.com/user-attachments/assets/b99ba3fe-3a23-489a-acbe-b28567efc55f" />
-
-- **Turbo Mode:** Analytical backend with vectorized probability model  
-- **Strategy-Aware Dashboards:** Compare Eve strategies side-by-side  
-- **Secure/Abort Zone Visualization:** Cyan contours + region labels  
-- **Caching & Reproducibility:** Instant demo experience for judges  
-- **Educational Design:** Clear labels, colour scales, and annotations
 
 ---
 
