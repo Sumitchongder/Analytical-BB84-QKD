@@ -62,7 +62,7 @@ Our app includes **strategy-aware dashboards**, **annotated heatmaps**, and **se
 
 As quantum computers advance, classical encryption methods like RSA and ECC face potential compromise. BB84 offers a physics-based alternative: any attempt to intercept qubits introduces detectable errors. This project makes BB84 tangible through simulation, visualization, and analysis.
 
-### 🔐 BB84 Protocol — 6 Key Steps**
+### 🔐 BB84 Protocol — 6 Key Steps
 - **Alice generates random bits and bases:** 
 She creates a sequence of 0s and 1s, and randomly chooses a basis (Z or X) to encode each bit as a quantum state.
 - **Alice sends qubits to Bob:**
