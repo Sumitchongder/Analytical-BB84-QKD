@@ -68,17 +68,17 @@ Each bit is encoded as a qubit — either |0⟩, |1⟩, |+⟩, or |−⟩ and tr
 - **Bob measures each qubit in a random basis:**
 Bob doesn’t know Alice’s basis, so he randomly picks Z or X for each qubit and records the result.
 
-<img width="2411" height="1459" alt="Image" src="https://github.com/user-attachments/assets/04f8f913-0285-46d6-8b76-796873a58eea" />
+![Image](https://github.com/user-attachments/assets/0716a692-3a13-432b-a029-ce6fda6c9e22)
 
 - **Alice and Bob share their basis choices:**
 Over a public classical channel, they reveal which basis they used — but not the actual bit values.
 
-<img width="2385" height="1448" alt="Image" src="https://github.com/user-attachments/assets/d21f3dd5-ada6-4304-ae97-8c3e5a69bc5e" />
+![Image](https://github.com/user-attachments/assets/43586a47-ff51-41c7-acdc-f33f96eb4428)
 
 - **Sifting and QBER estimation:**
 They keep only the bits where their bases matched (sifted key), then compare a small sample to estimate the Quantum Bit Error Rate (QBER).
 
-<img width="2435" height="1446" alt="Image" src="https://github.com/user-attachments/assets/dd6ac6b6-b073-4553-b9b3-6084c2e7d4ad" />
+![Image](https://github.com/user-attachments/assets/a39987a5-485a-4990-82e3-d36f6dcde965)
 
 - **Error Correction and Privacy Amplification:**
 If QBER is low, they correct errors and compress the key to remove any leaked information, resulting in a secure shared key.
