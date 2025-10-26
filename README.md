@@ -23,13 +23,13 @@ This project presents a complete, interactive implementation of the BB84 Quantum
 - **Analytical Turbo Mode** enables scalable, real-time visualization of Quantum Bit Error Rate (QBER) by replacing gate-level quantum simulation with closed-form probabilistic models that compute ensemble-averaged outcomes across thousands of qubits, eliminating the need for per-qubit gate and measurement simulation.
 
 Users can toggle between multiple Eve strategies
-- DoNothing: Eve remains passive and does not interfere with the qubits, resulting in no disturbance.
-- Intercept-Resend: - Eve measures each qubit in a fixed basis and resends it, causing significant errors when her basis mismatches Alice’s.
-- Probabilistic Skew: Eve chooses her measurement basis with a biased probability, introducing subtle errors that are harder to detect.
+- **DoNothing:** Eve remains passive and does not interfere with the qubits, resulting in no disturbance.
+- **Intercept-Resend:** Eve measures each qubit in a fixed basis and resends it, causing significant errors when her basis mismatches Alice’s.
+- **Probabilistic Skew:** Eve chooses her measurement basis with a biased probability, introducing subtle errors that are harder to detect.
   
-Our app also offers a stepwise walkthrough of the BB84 protocol, allowing users to observe each phase of quantum key generation and security validation in detail.
+Our app also offers a **stepwise walkthrough** of the **BB84 protocol**, allowing users to observe each phase of quantum key generation and security validation in detail.
 
-Our app includes strategy-aware dashboards, annotated heatmaps, and secure/abort zone visualizations — making quantum security fast, clear, and interactive.
+Our app includes *strategy-aware dashboards*, *annotated heatmaps*, and *secure/abort zone visualizations* — making quantum security fast, clear, and interactive.
 
 ---
 
