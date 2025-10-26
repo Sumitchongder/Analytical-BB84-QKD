@@ -29,18 +29,18 @@ Users can toggle between multiple Eve strategies
   
 Our app also offers a **stepwise walkthrough** of the **BB84 protocol**, allowing users to observe each phase of quantum key generation and security validation in detail.
 
-Our app includes *strategy-aware dashboards*, *annotated heatmaps*, and *secure/abort zone visualizations* — making quantum security fast, clear, and interactive.
+Our app includes **strategy-aware dashboards**, **annotated heatmaps**, and **secure/abort zone visualizations** — making quantum security fast, clear, and interactive.
 
 ---
 
 ## 🚀 Features
 
-- ✅ Full BB84 protocol workflow: Alice → Eve → Bob → Sifting → QBER → EC/PA  
-- ⚡ Dual execution modes: Simulator (Qiskit Aer) and Analytical Turbo Mode
-- 🧠 Eavesdropper simulation: Intercept-Resend and Probabilistic Skew strategies  
-- 📊 Security phase diagrams: QBER heatmaps with cyan threshold contours  
-- 🔍 Decoy state analysis: Signal > Decoy > Vacuum yield ordering  
-- 🧪 Noise modelling: Depolarizing channel with adjustable parameters  
+- ✅ **Full BB84 protocol workflow:** Alice → Eve → Bob → Sifting → QBER → EC/PA  
+- ⚡ **Dual execution modes:** Simulator (Qiskit Aer) and Analytical Turbo Mode
+- 🧠 **Eavesdropper simulation:** Intercept-Resend and Probabilistic Skew strategies  
+- 📊 **Security phase diagrams:** QBER heatmaps with cyan threshold contours  
+- 🔍 **Decoy state analysis:** Signal > Decoy > Vacuum yield ordering  
+- 🧪 **Noise modelling:** Depolarizing channel with adjustable parameters  
 - 🧰 Modular codebase with caching and reproducibility  
 - 🎓 Educational clarity with annotated visuals and interactive UI
 
@@ -60,24 +60,27 @@ Our app includes *strategy-aware dashboards*, *annotated heatmaps*, and *secure/
 
 As quantum computers advance, classical encryption methods like RSA and ECC face potential compromise. BB84 offers a physics-based alternative: any attempt to intercept qubits introduces detectable errors. This project makes BB84 tangible through simulation, visualization, and analysis.
 
-🔐 BB84 Protocol — 6 Key Steps
-- Alice generates random bits and bases: 
+### 🔐 BB84 Protocol — 6 Key Steps**
+- **Alice generates random bits and bases:** 
 She creates a sequence of 0s and 1s, and randomly chooses a basis (Z or X) to encode each bit as a quantum state.
-- Alice sends qubits to Bob:
+- **Alice sends qubits to Bob:**
 Each bit is encoded as a qubit — either |0⟩, |1⟩, |+⟩, or |−⟩ and transmitted over a quantum channel.
-- Bob measures each qubit in a random basis:
+- **Bob measures each qubit in a random basis:**
 Bob doesn’t know Alice’s basis, so he randomly picks Z or X for each qubit and records the result.
+
 <img width="2411" height="1459" alt="Image" src="https://github.com/user-attachments/assets/04f8f913-0285-46d6-8b76-796873a58eea" />
 
-- Alice and Bob share their basis choices:
+- **Alice and Bob share their basis choices:**
 Over a public classical channel, they reveal which basis they used — but not the actual bit values.
+
 <img width="2385" height="1448" alt="Image" src="https://github.com/user-attachments/assets/d21f3dd5-ada6-4304-ae97-8c3e5a69bc5e" />
 
-- Sifting and QBER estimation:
+- **Sifting and QBER estimation:**
 They keep only the bits where their bases matched (sifted key), then compare a small sample to estimate the Quantum Bit Error Rate (QBER).
+
 <img width="2435" height="1446" alt="Image" src="https://github.com/user-attachments/assets/dd6ac6b6-b073-4553-b9b3-6084c2e7d4ad" />
 
-- Error Correction and Privacy Amplification:
+- **Error Correction and Privacy Amplification:**
 If QBER is low, they correct errors and compress the key to remove any leaked information, resulting in a secure shared key.
 
 
